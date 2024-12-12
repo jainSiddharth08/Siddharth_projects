@@ -3,7 +3,7 @@ package com.java.codes;
 public class PalindromeOrNot {
 
 	public static void main(String[] args) {
-		int n = 151;
+		int n = 121;
 		int original = n;
 		int rev = 0;
 		while (n > 0) {
