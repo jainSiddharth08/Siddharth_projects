@@ -1,25 +1,32 @@
-package com.java.codes;;
+package com.java.codes;
+
+import java.util.Scanner;
+
+;
 
 public class ArmStrongNumber {
 
 	public static void main(String[] args) {
-		int n=153;
-		int temp=n;
-		int sum=0;
-		while(n>0){
-			int rem=n%10;//3
-			sum=sum+rem*rem*rem; //0+3*3*3
-			n=n/10; //15
-		}
-		System.out.println(sum);
-		
-		if(temp==sum) {
-			System.out.println("Number is ArmStrong");
-		}
-		else{
-			System.out.println("Number is Not ArmStrong");
-		}
+		 Scanner scanner = new Scanner(System.in);
 
-	}
+	        System.out.print("Enter a number: ");
+	        int number = scanner.nextInt();
+
+	        int original = number;
+	        int result = 0;
+	        int n = String.valueOf(number).length();
+
+	        while (number != 0) {
+	            int digit = number % 10;
+	            result += Math.pow(digit, n);
+	            number /= 10;
+	        }
+
+	        if (result == original) {
+	            System.out.println(original + " is an Armstrong number.");
+	        } else {
+	            System.out.println(original + " is not an Armstrong number.");
+	        }
+	    }
 
 }
