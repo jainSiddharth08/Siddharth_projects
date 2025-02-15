@@ -28,10 +28,12 @@ public class SortArrayEvenOdd {
 	        // Step 3: Merge both lists back into the array
 	        int index = 0;
 	        for (int even : evens) {
-	            arr[index++] = even;
+	            arr[index] = even;
+	            index++;
 	        }
 	        for (int odd : odds) {
-	            arr[index++] = odd;
+	            arr[index] = odd;
+	            index++;
 	        }
 
 	        // Print the sorted array

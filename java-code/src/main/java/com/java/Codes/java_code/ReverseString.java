@@ -7,7 +7,7 @@ public class ReverseString {
 		
 		/*To reverse a string without reversing the position of words*/
 		
-		String s = "Hi this is DeepIntent";
+		String s = "Hi this is Siddharth";
 		
 		String[] words = s.split(" ");
 		
