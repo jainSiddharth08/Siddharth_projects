@@ -2,7 +2,7 @@ package com.java.codes;
 
 import java.util.HashMap;
 
-public class CountOfCharchterInString {
+public class OccurenceOfCharchterInString {
 
 	public static void main(String[] args) {
 		String s = "absahysnb";
